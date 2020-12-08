@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+  <div class="container">
+    <h1 class="text-center my-4">
+      <a href="{% url 'home' %}" class="text-decoration-none text-secondary">Django Boards</a>
+    </h1>
+    {% block content %}
+    {% endblock content %}
+  </div>
+{% endblock body %}
